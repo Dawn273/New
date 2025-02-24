@@ -84,7 +84,9 @@ export default function Blog() {
                       </Avatar>
                       <span className="ml-2 text-sm text-gray-600">{post.author.name}</span>
                     </div>
-                    <Button variant="ghost" size="sm">Read More</Button>
+                    <Link href={`/blog/${post.id}`}>
+                      <Button variant="ghost" size="sm">Read More</Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>

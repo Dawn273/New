@@ -9,6 +9,7 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Events from "@/pages/Events";
 import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
 
@@ -23,6 +24,7 @@ function Router() {
           <Route path="/services" component={Services} />
           <Route path="/events" component={Events} />
           <Route path="/blog" component={Blog} />
+          <Route path="/blog/:id" component={BlogPost} />
           <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
