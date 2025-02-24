@@ -33,4 +33,5 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
   },
+  base: "/New/", // ✅ Changed to your actual repository name
 });
