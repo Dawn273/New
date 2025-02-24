@@ -57,24 +57,35 @@ export default function Home() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(var(--primary),0.1),transparent)]" />
             </div>
 
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6">
-              Dawn M. Kamara
-            </h1>
-            <p className="text-xl sm:text-2xl text-primary font-semibold mb-4">
-              Practice Manager • EEO Investigator • Leadership Development Strategist
-            </p>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Empowering professionals through leadership development, legal expertise, 
-              and strategic guidance. Founder of The Grind Network, LLC and CLE Director 
-              at Georgia Association of Paralegals.
-            </p>
-            <div className="flex justify-center gap-4">
-              <Link href="/about">
-                <Button size="lg" className="text-lg px-8">Learn More</Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="outline" size="lg" className="text-lg px-8">Get in Touch</Button>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 md:order-1">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+                  Dawn M. Kamara
+                </h1>
+                <p className="text-xl sm:text-2xl text-primary font-semibold mb-4">
+                  Practice Manager • EEO Investigator • Leadership Development Strategist
+                </p>
+                <p className="text-lg text-gray-600 mb-8">
+                  Empowering professionals through leadership development, legal expertise,
+                  and strategic guidance. Founder of The Grind Network, LLC and CLE Director
+                  at Georgia Association of Paralegals.
+                </p>
+                <div className="flex justify-center gap-4">
+                  <Link href="/about">
+                    <Button size="lg" className="text-lg px-8">Learn More</Button>
+                  </Link>
+                  <Link href="/contact">
+                    <Button variant="outline" size="lg" className="text-lg px-8">Get in Touch</Button>
+                  </Link>
+                </div>
+              </div>
+              <div className="order-1 md:order-2">
+                <img
+                  src="/assets/1726462226210.jpeg"
+                  alt="Dawn M. Kamara"
+                  className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
+                />
+              </div>
             </div>
           </motion.div>
         </div>

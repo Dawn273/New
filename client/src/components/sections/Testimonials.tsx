@@ -2,28 +2,28 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
-const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "HR Director, Tech Solutions Inc.",
-    image: "https://ui-avatars.com/api/?name=Sarah+Johnson&background=random",
-    content: "Dawn's leadership development program transformed our management team. Her insights and strategies have had a lasting impact on our organization's culture."
-  },
-  {
-    name: "Michael Chen",
-    role: "Managing Partner, Chen & Associates",
-    image: "https://ui-avatars.com/api/?name=Michael+Chen&background=random",
-    content: "Working with Dawn on EEO investigations has been exceptional. Her thoroughness and professionalism set the standard in the industry."
-  },
-  {
-    name: "Lisa Martinez",
-    role: "President, Legal Professionals Association",
-    image: "https://ui-avatars.com/api/?name=Lisa+Martinez&background=random",
-    content: "Dawn's speaking engagements are always inspiring and packed with actionable insights. She has a unique ability to connect with her audience."
-  }
-];
-
 export function Testimonials() {
+  const testimonials = [
+    {
+      name: "Sarah Johnson",
+      role: "HR Director, Tech Solutions Inc.",
+      image: "/assets/1728064803030.jpeg",
+      content: "Dawn's leadership development program transformed our management team. Her insights and strategies have had a lasting impact on our organization's culture."
+    },
+    {
+      name: "Michael Chen",
+      role: "Managing Partner, Chen & Associates",
+      image: "/assets/1728136811635.jpeg",
+      content: "Working with Dawn on EEO investigations has been exceptional. Her thoroughness and professionalism set the standard in the industry."
+    },
+    {
+      name: "Lisa Martinez",
+      role: "President, Legal Professionals Association",
+      image: "/assets/1731650447801.jpeg",
+      content: "Dawn's speaking engagements are always inspiring and packed with actionable insights. She has a unique ability to connect with her audience."
+    }
+  ];
+
   return (
     <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

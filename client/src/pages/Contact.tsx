@@ -20,7 +20,7 @@ import { apiRequest } from "@/lib/queryClient";
 
 export default function Contact() {
   const { toast } = useToast();
-  
+
   const form = useForm<InsertMessage>({
     resolver: zodResolver(insertMessageSchema),
     defaultValues: {
@@ -74,7 +74,7 @@ export default function Contact() {
           >
             <div className="space-y-8">
               <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
-              
+
               <div className="flex items-start space-x-4">
                 <FaMapMarkerAlt className="text-primary h-6 w-6 mt-1" />
                 <div>
@@ -90,7 +90,7 @@ export default function Contact() {
                 <FaEnvelope className="text-primary h-6 w-6 mt-1" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-600">dawn.cle@gap-example.org</p>
+                  <p className="text-gray-600">dmkamara@gmail.com</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
                 <FaPhone className="text-primary h-6 w-6 mt-1" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-gray-600">(404) 555-0123</p>
+                  <p className="text-gray-600">+1 (678) 799-4425</p>
                 </div>
               </div>
             </div>

@@ -23,7 +23,13 @@ export function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <a className="text-2xl font-bold text-primary">Dawn</a>
+              <a className="flex items-center">
+                <img 
+                  src="/assets/image.png" 
+                  alt="Dawn Kamara Logo" 
+                  className="h-12 w-auto"
+                />
+              </a>
             </Link>
           </div>
 
