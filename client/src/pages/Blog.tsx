@@ -13,7 +13,7 @@ const blogPosts = [
     date: "February 20, 2025",
     author: {
       name: "Dawn M. Kamara",
-      image: "https://ui-avatars.com/api/?name=Dawn+Kamara&background=random",
+      image: "/assets/1728064803030.jpeg",
     },
     category: "Leadership",
   },
@@ -24,7 +24,7 @@ const blogPosts = [
     date: "February 15, 2025",
     author: {
       name: "Dawn M. Kamara",
-      image: "https://ui-avatars.com/api/?name=Dawn+Kamara&background=random",
+      image: "/assets/1728136811635.jpeg",
     },
     category: "Legal",
   },
@@ -35,7 +35,7 @@ const blogPosts = [
     date: "February 10, 2025",
     author: {
       name: "Dawn M. Kamara",
-      image: "https://ui-avatars.com/api/?name=Dawn+Kamara&background=random",
+      image: "/assets/1731650447801.jpeg",
     },
     category: "Professional Development",
   },

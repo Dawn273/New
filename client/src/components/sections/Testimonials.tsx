@@ -7,19 +7,19 @@ export function Testimonials() {
     {
       name: "Sarah Johnson",
       role: "HR Director, Tech Solutions Inc.",
-      image: "/assets/1728064803030.jpeg",
+      image: "/assets/_sfeJ0bmT7C6zND-YtCkrw.jpeg",
       content: "Dawn's leadership development program transformed our management team. Her insights and strategies have had a lasting impact on our organization's culture."
     },
     {
       name: "Michael Chen",
       role: "Managing Partner, Chen & Associates",
-      image: "/assets/1728136811635.jpeg",
+      image: "/assets/J8hWvvVvRPqQDg1dlZpwOw.jpeg",
       content: "Working with Dawn on EEO investigations has been exceptional. Her thoroughness and professionalism set the standard in the industry."
     },
     {
       name: "Lisa Martinez",
       role: "President, Legal Professionals Association",
-      image: "/assets/1731650447801.jpeg",
+      image: "/assets/3Yg8egr1TJOGNztygmxGqQ.webp",
       content: "Dawn's speaking engagements are always inspiring and packed with actionable insights. She has a unique ability to connect with her audience."
     }
   ];
