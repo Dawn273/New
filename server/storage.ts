@@ -1,38 +1,45 @@
-import { users, type User, type InsertUser } from "@shared/schema";
-
-// modify the interface with any CRUD methods
-// you might need
+import { events, messages, type Event, type InsertEvent, type Message, type InsertMessage } from "@shared/schema";
 
 export interface IStorage {
-  getUser(id: number): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
+  getEvents(): Promise<Event[]>;
+  getEvent(id: number): Promise<Event | undefined>;
+  createEvent(event: InsertEvent): Promise<Event>;
+  createMessage(message: InsertMessage): Promise<Message>;
 }
 
 export class MemStorage implements IStorage {
-  private users: Map<number, User>;
-  currentId: number;
+  private events: Map<number, Event>;
+  private messages: Map<number, Message>;
+  private currentEventId: number;
+  private currentMessageId: number;
 
   constructor() {
-    this.users = new Map();
-    this.currentId = 1;
+    this.events = new Map();
+    this.messages = new Map();
+    this.currentEventId = 1;
+    this.currentMessageId = 1;
   }
 
-  async getUser(id: number): Promise<User | undefined> {
-    return this.users.get(id);
+  async getEvents(): Promise<Event[]> {
+    return Array.from(this.events.values());
   }
 
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+  async getEvent(id: number): Promise<Event | undefined> {
+    return this.events.get(id);
   }
 
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = this.currentId++;
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async createEvent(insertEvent: InsertEvent): Promise<Event> {
+    const id = this.currentEventId++;
+    const event: Event = { ...insertEvent, id, isActive: insertEvent.isActive ?? true };
+    this.events.set(id, event);
+    return event;
+  }
+
+  async createMessage(insertMessage: InsertMessage): Promise<Message> {
+    const id = this.currentMessageId++;
+    const message: Message = { ...insertMessage, id, createdAt: new Date() };
+    this.messages.set(id, message);
+    return message;
   }
 }
 
