@@ -30,8 +30,8 @@ export default defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve(__dirname, "docs"), // ✅ Output the build to the 'docs' folder for GitHub Pages
     emptyOutDir: true,
   },
-  base: "/New/", // ✅ Changed to your actual repository name
+  base: "/New/", // ✅ Repository name for GitHub Pages
 });
