@@ -47,16 +47,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-primary/5">
         <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center relative"
-          >
-            <div className="absolute inset-0 -z-10">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(var(--primary),0.1),transparent)]" />
-            </div>
-
+          <div className="text-center relative">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6">
@@ -81,61 +72,15 @@ export default function Home() {
               </div>
               <div className="order-1 md:order-2">
                 <img
-                  src="/assets/1726462226210.jpeg"
+                  src="/New/assets/1726462226210.jpeg"
                   alt="Dawn M. Kamara"
                   className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
                 />
               </div>
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="py-16 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl font-bold mb-2">{stat.number}</div>
-                <div className="text-primary-foreground/90">{stat.label}</div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
-
-      {/* Features Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-sm border"
-              >
-                <feature.icon />
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <Testimonials />
-
-      {/* Newsletter Section */}
-      <Newsletter />
     </div>
   );
 }
